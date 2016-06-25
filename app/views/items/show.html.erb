@@ -1,0 +1,31 @@
+<p>
+  <b>商品名：<%= @item.name %></b>
+</p>
+
+<p>
+  <b>商品詳細：<%= @item.description %></b>
+</p>
+
+<p>
+  <b>価格：<%= @item.price %></b>
+</p>
+
+<p>
+  <b>売り手ID：<%= @item.seller_id%></b>
+</p>
+
+<p>
+  <b>電子メール：<%= @item.email %></b>
+</p>
+
+<p>
+  <img src=" <%= @item.image_url %> ">
+</p>
+
+<p>
+  <a href="/items/<%= @item.id %>/edit">編集</a>
+  <a href="/items/<%= @item.id %>" data-method="delete" >削除</a>
+  <%= link_to '戻る?', items_path %>
+
+
+<p>

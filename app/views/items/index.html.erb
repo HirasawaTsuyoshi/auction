@@ -1,0 +1,5 @@
+<h1>出品商品一覧</h1>
+<% @items.each do |item| %>
+  <li><a href="/items/<%= item.id %>"><%= item.name %></a></li>
+<% end %>
+<a href="/items/new">出品する</a>
